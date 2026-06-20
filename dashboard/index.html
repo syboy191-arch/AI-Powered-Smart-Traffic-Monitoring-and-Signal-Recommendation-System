@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart City Traffic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart City Traffic Dashboard</h1>
+
+<div class="card">
+    <h2>Cars</h2>
+    <p id="cars">0</p>
+</div>
+
+<div class="card">
+    <h2>Motorcycles</h2>
+    <p id="motorcycles">0</p>
+</div>
+
+<div class="card">
+    <h2>Buses</h2>
+    <p id="buses">0</p>
+</div>
+
+<div class="card">
+    <h2>Trucks</h2>
+    <p id="trucks">0</p>
+</div>
+
+<div class="card">
+    <h2>Traffic Density</h2>
+    <p id="density" class="density-badge">Loading...</p>
+</div>
+
+<script src="script.js"></script>
+
+<canvas id="trafficChart"></canvas>
+
+<div class="recommendation-box">
+    <h2>AI Recommendation</h2>
+    <p id="recommendation">Loading...</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
