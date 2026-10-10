@@ -1,0 +1,29 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / Frontend Build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Maven / Java Build
+target/
+backend/target/
+*.class
+
+# YOLO and Processing Run Output
+runs/
+
+# Temporary / OS Files
+.DS_Store
+Thumbs.db
+*.log

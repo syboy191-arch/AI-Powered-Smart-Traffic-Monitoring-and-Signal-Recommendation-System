@@ -1,7 +1,23 @@
 {
-    "cars": 100,
-    "motorcycles": 30,
-    "buses": 40,
-    "trucks": 50,
-    "density": "HIGH"
+    "cars": 2653,
+    "motorcycles": 127,
+    "buses": 1274,
+    "trucks": 92,
+    "density": "HIGH",
+    "unique_vehicles": {
+        "cars": 50,
+        "motorcycles": 5,
+        "buses": 21,
+        "trucks": 13,
+        "total": 74
+    },
+    "frames_processed": 310,
+    "fps": 30.0,
+    "duration_seconds": 10.33,
+    "avg_vehicles_per_frame": 13.3742,
+    "peak_vehicles_in_frame": 19,
+    "thresholds": {
+        "medium": 5,
+        "high": 12
+    }
 }

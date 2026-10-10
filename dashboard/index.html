@@ -1,49 +1,13 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Smart City Traffic Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<h1>Smart City Traffic Dashboard</h1>
-
-<div class="card">
-    <h2>Cars</h2>
-    <p id="cars">0</p>
-</div>
-
-<div class="card">
-    <h2>Motorcycles</h2>
-    <p id="motorcycles">0</p>
-</div>
-
-<div class="card">
-    <h2>Buses</h2>
-    <p id="buses">0</p>
-</div>
-
-<div class="card">
-    <h2>Trucks</h2>
-    <p id="trucks">0</p>
-</div>
-
-<div class="card">
-    <h2>Traffic Density</h2>
-    <p id="density" class="density-badge">Loading...</p>
-</div>
-
-<script src="script.js"></script>
-
-<canvas id="trafficChart"></canvas>
-
-<div class="recommendation-box">
-    <h2>AI Recommendation</h2>
-    <p id="recommendation">Loading...</p>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="script.js"></script>
-
-</body>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237692FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='M12 6v6l4 2'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Traffic Monitor & Signal Recommendation</title>
+  </head>
+  <body class="bg-navy text-text font-sans antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

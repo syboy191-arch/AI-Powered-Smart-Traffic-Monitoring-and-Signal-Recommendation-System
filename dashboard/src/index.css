@@ -1,0 +1,60 @@
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/space-grotesk";
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #091540;
+  --color-cobalt: #1B2CC1;
+  --color-periwinkle: #7692FF;
+  --color-sky: #ABD2FA;
+  --color-surface: #0E1C52;
+  --color-raised: #14276E;
+  --color-text: #EAF2FF;
+  --color-muted: #9FB6E6;
+  --color-border-subtle: rgba(171, 210, 250, 0.14);
+
+  --color-status-low: #34D399;
+  --color-status-medium: #FBBF24;
+  --color-status-high: #F87171;
+
+  --radius-card: 16px;
+  --radius-btn: 10px;
+
+  --font-sans: 'Inter Variable', sans-serif;
+  --font-display: 'Space Grotesk Variable', sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-navy);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Global accessible periwinkle focus rings */
+:focus-visible {
+  outline: 2px solid var(--color-periwinkle);
+  outline-offset: 2px;
+}
+
+/* System-wide reduced motion override */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
